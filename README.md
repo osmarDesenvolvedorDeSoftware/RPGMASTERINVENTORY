@@ -22,9 +22,10 @@ Room Database 💾
 
 RecyclerView 📄
 
-🧑‍💻 Desenvolvedor
+## 🧑‍💻 Desenvolvedor
 
-👤 Osmar - Desenvolvedor Android
+👤 **Osmar - Desenvolvedor Android**  
+📌 [GitHub](https://github.com/osmarDesenvolvedorDeSoftware)  
 
 ## 🚀 Como Executar
 
