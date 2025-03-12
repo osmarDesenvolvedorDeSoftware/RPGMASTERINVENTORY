@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editHP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="HP"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/editCA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="CA"
+        android:inputType="number"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/editInitiative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Iniciativa"
+        android:inputType="numberSigned"
+        android:layout_marginTop="8dp"/>
+
+</LinearLayout>
