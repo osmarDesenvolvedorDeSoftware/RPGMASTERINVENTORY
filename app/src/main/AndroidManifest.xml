@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <!-- Permissão para acessar a Internet (necessária para Firebase Firestore) -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,29 +17,40 @@
         android:theme="@style/Theme.RPGInventoryMaster"
         tools:targetApi="31">
 
+        <!-- Configuração do Firebase Firestore -->
+        <meta-data
+            android:name="com.google.firebase.firestore"
+            android:value="true"/>
+
         <!-- Main Activity -->
         <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
 
         <!-- Activity para o Painel do Mestre -->
         <activity
             android:name=".MasterPanelActivity"
-            android:exported="true" />
+            android:exported="true"/>
 
         <!-- Activity para o Inventário do Jogador -->
         <activity
             android:name=".PlayerInventoryActivity"
-            android:exported="true" />
+            android:exported="true"/>
 
-        <activity android:name=".MasterInventoryActivity" />
+        <!-- Activity para o Inventário do Mestre -->
+        <activity
+            android:name=".MasterInventoryActivity"
+            android:exported="true"/>
 
-        <activity android:name=".SelectItemActivity" />
+        <!-- Activity para Selecionar Item -->
+        <activity
+            android:name=".SelectItemActivity"
+            android:exported="true"/>
 
     </application>
 
